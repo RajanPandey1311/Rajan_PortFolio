@@ -47,8 +47,8 @@ const Portfolio = () => {
       description:
         "FitFlare is a fully responsive gym app by leveraging ReactJS as the core framework with Framer Motion for seamless animations and EmailJS for streamlined communication.",
       technologies: "React | Framer Motion | Email.js | JavaScript",
-      link: "https://github.com/RajanPandey1311/FitFlare",
-      github: "https://fit-flare.vercel.app/",
+      link: "https://fit-flare.vercel.app/",
+      github: "https://github.com/RajanPandey1311/FitFlare",
     },
     {
       id: 2,
