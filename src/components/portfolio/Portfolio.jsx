@@ -12,23 +12,23 @@ const Portfolio = () => {
   const soloProjects = [
     {
       id: 1,
-      title: "MERN Stack Quiz App",
-      img: IMG1,
+      title: "MERN E-commerce WebApp",
+      img: IMG2,
       description:
-        "A sophisticated MERN stack quiz application featuring MERN Stack including React hooks, MongoDB, Express.js, Node.js, and Redux for state management.",
-      technologies: "React | Redux | Node.js | Express.js | MongoDB",
-      link: "https://brain-teaser-ten.vercel.app/",
-      github: "https://github.com/RajanPandey1311/Brain-Teaser",
+        "Fully responsive MERN e-commerce app. Features authentication with JWT, switching between frontend and Admin Panel. Built with React.js, Node.js, Express.js, MongoDB.",
+      technologies: "MERN | JSON Web Token | Multer | CSS",
+      link: "https://rajan-ecommerce.vercel.app/",
+      github: "https://github.com/RajanPandey1311/MERN_Ecommerce",
     },
     {
       id: 1,
-      title: "E-commerce WebApp",
-      img: IMG2,
+      title: "Reactjs Animated Fitness WebApp",
+      img: IMG4,
       description:
-        "A fully responsive E-Com site with React.js which allows users to browse, select, and purchase items and having features of product listings, login page and shopping carts.",
-      technologies: "React | JavaScript | CSS",
-      link: "https://ecommerce-web-app-xi.vercel.app/",
-      github: "https://github.com/RajanPandey1311/Ecommerce_WebApp",
+        "FitFlare is a fully responsive gym app by leveraging ReactJS as the core framework with Framer Motion for seamless animations and EmailJS for streamlined communication.",
+      technologies: "React | Framer Motion | Email.js | JavaScript",
+      link: "https://github.com/RajanPandey1311/FitFlare",
+      github: "https://fit-flare.vercel.app/",
     },
     {
       id: 1,
@@ -42,13 +42,13 @@ const Portfolio = () => {
     },
     {
       id: 1,
-      title: "Fitness WebApp",
-      img: IMG4,
+      title: "MERN Stack Quiz App",
+      img: IMG1,
       description:
-        "FitFlare is a fully responsive gym app by leveraging ReactJS as the core framework with Framer Motion for seamless animations and EmailJS for streamlined communication.",
-      technologies: "React | Framer Motion | Email.js | JavaScript",
-      link: "https://fit-flare.vercel.app/",
-      github: "https://github.com/RajanPandey1311/FitFlare",
+        "A sophisticated MERN stack quiz application featuring MERN Stack including React hooks, MongoDB, Express.js, Node.js, and Redux for state management.",
+      technologies: "React | Redux | Node.js | Express.js | MongoDB",
+      link: "https://brain-teaser-ten.vercel.app/",
+      github: "https://github.com/RajanPandey1311/Brain-Teaser",
     },
     {
       id: 2,
