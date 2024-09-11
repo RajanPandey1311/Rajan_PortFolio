@@ -20,12 +20,12 @@ const Intro = () => {
             <article className="about__card">
               <FaAward className="about__icon" />
               <h5>Experience</h5>
-              <small>0-1 year(Fresher)</small>
+              <small>1 year</small>
             </article>
             <article className="about__card">
               <VscFolderLibrary className="about__icon" />
               <h5>Projects</h5>
-              <small>6+ Completed Projects</small>
+              <small>9+ Completed Projects</small>
             </article>
           </div>
           <p>
@@ -39,7 +39,7 @@ const Intro = () => {
             and scalable code.{" "}
           </p>
           <p>
-            🚀Innovative and detail-oriented Software Developer with over [1]
+            🚀Innovative and detail-oriented Software Developer with over 1
             year of experience specializing in frontend development using
             React/Next.
           </p>
