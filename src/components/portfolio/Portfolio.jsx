@@ -5,11 +5,24 @@ import IMG3 from "../../assets/01.png";
 import IMG4 from "../../assets/Screenshot (g1).png";
 import IMG5 from "../../assets/33.png";
 import IMG6 from "../../assets/ClimaCheck1.png";
+import IMG7 from "../../assets/Canvas.png";
+import IMG8 from "../../assets/Travel.png";
+import IMG9 from "../../assets/TrueLoop.png";
 
 import "./portfolio.css";
 
 const Portfolio = () => {
   const soloProjects = [
+        {
+      id: 8,
+      title: "TrueLoop FullStack FeedApp",
+      img: IMG9,
+      description:
+        "Developed a fully Responsive "TrueLoop" using Next.js, MongoDB, Zod, NextAuth, Resend Email, Tailwind CSS, TypeScript, and Google Gemini AI for an anonymous feedback platform",
+      technologies: "Next.js 14 | NextAuth.js | Gemini AI | TypeScript",
+      link: "https://trueloop.vercel.app/",
+      github: "https://github.com/RajanPandey1311/Trueloop",
+    },
     {
       id: 1,
       title: "MERN E-commerce WebApp",
@@ -21,17 +34,17 @@ const Portfolio = () => {
       github: "https://github.com/RajanPandey1311/MERN_Ecommerce",
     },
     {
-      id: 1,
-      title: "Reactjs Animated Fitness WebApp",
-      img: IMG4,
+      id: 7,
+      title: "NextJS 14 Travel App",
+      img: IMG8,
       description:
-        "FitFlare is a fully responsive gym app by leveraging ReactJS as the core framework with Framer Motion for seamless animations and EmailJS for streamlined communication.",
-      technologies: "React | Framer Motion | Email.js | JavaScript",
-      link: "https://fit-flare.vercel.app/",
-      github: "https://github.com/RajanPandey1311/FitFlare",
+        "Built a Fully responsive travelling WebApp with Next.js 14 , Tailwind CSS and TypeScript. Utilized Image from nextjs for most optimized reduced loading time.",
+      technologies: "Next.js 14 | TypeScript | Tailwind CSS",
+      link: "https://nextjs-travelling.vercel.app/",
+      github: "https://github.com/RajanPandey1311/Nextjs_Travelling",
     },
     {
-      id: 1,
+      id: 3,
       title: "my npm package",
       img: IMG3,
       description:
@@ -41,7 +54,27 @@ const Portfolio = () => {
       github: "https://github.com/RajanPandey1311/rajan_npm_package",
     },
     {
-      id: 1,
+      id: 2,
+      title: "Reactjs Animated Fitness WebApp",
+      img: IMG4,
+      description:
+        "FitFlare is a fully responsive gym app by leveraging ReactJS as the core framework with Framer Motion for seamless animations and EmailJS for streamlined communication.",
+      technologies: "React | Framer Motion | Email.js | JavaScript",
+      link: "https://fit-flare.vercel.app/",
+      github: "https://github.com/RajanPandey1311/FitFlare",
+    },
+    {
+      id: 6,
+      title: "Canvas Editor Fabric.js",
+      img: IMG7,
+      description:
+        "Developed a canvas editor using React, Fabric.js, Tailwind CSS, and the Unsplash API. It enables users to search, set images as backgrounds, and edit directly on the canvas for enhanced customization.",
+      technologies: "React.js | Fabric.js | Tailwind CSS",
+      link: "https://canvas-editor-fabric-js.vercel.app/",
+      github: "https://github.com/RajanPandey1311/Canvas_editor_Fabric.js",
+    },
+    {
+      id: 4,
       title: "MERN Stack Quiz App",
       img: IMG1,
       description:
@@ -51,7 +84,7 @@ const Portfolio = () => {
       github: "https://github.com/RajanPandey1311/Brain-Teaser",
     },
     {
-      id: 2,
+      id: 5,
       title: "ClimaCheck Weather_App",
       img: IMG6,
       description:
@@ -61,7 +94,7 @@ const Portfolio = () => {
       github: "https://github.com/RajanPandey1311/ClimaCheck",
     },
     {
-      id: 3,
+      id: 9,
       title: "VoiceRecognition",
       img: IMG5,
       description:
