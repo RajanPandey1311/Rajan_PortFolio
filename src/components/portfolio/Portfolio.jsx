@@ -18,7 +18,7 @@ const Portfolio = () => {
       title: "TrueLoop FullStack FeedApp",
       img: IMG9,
       description:
-        "Developed a fully Responsive "TrueLoop" using Next.js, MongoDB, Zod, NextAuth, Resend Email, Tailwind CSS, TypeScript, and Google Gemini AI for an anonymous feedback platform",
+        "Developed a fully Responsive 'TrueLoop' using Next.js, MongoDB, Zod, NextAuth, Resend Email, Tailwind CSS, TypeScript, and Google Gemini AI for an anonymous feedback platform",
       technologies: "Next.js 14 | NextAuth.js | Gemini AI | TypeScript",
       link: "https://trueloop.vercel.app/",
       github: "https://github.com/RajanPandey1311/Trueloop",
