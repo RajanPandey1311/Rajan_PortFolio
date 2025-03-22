@@ -27,7 +27,7 @@ const Footer = () => {
       <a href="https://www.instagram.com/rajanpandey_r/" target="_blank" rel="noreferrer" ><FaInstagram /></a>
       </div>
       <div className="footer__copyright">
-        <small>&copy; Rajan_Pandey {getYear()}. All rights reserved.</small>
+        <small>&copy; Rajan Pandey {getYear()}. All rights reserved.</small>
       </div>
     </footer>
   )

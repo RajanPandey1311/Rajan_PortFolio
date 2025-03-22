@@ -29,17 +29,17 @@ const Intro = () => {
             </article>
           </div>
           <p>
-            🚀I'm Rajan Pandey, Enthusiast Frontend Developer skilled in
+           # I'm Rajan Pandey, Enthusiast Frontend Developer skilled in
             crafting engaging user interfaces and Software Developer proficient
             in creating robust applications.{" "}
           </p>
           <p>
-            🚀A developer who is passionate about understanding the business
+           # A developer who is passionate about understanding the business
             requirements and turn those requirements into reusable, maintainable
             and scalable code.{" "}
           </p>
           <p>
-            🚀Innovative and detail-oriented Software Developer with over 1
+            # Innovative and detail-oriented Software Developer with over 1
             year of experience specializing in frontend development using
             React/Next.
           </p>

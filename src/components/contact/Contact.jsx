@@ -37,7 +37,7 @@ const Contact = () => {
           <article className="contact__option">
             <MdOutlineEmail className="contact__option-icon" />
             <h4>Email</h4>
-            <h6>rajanpandeygiit31078379@gmail.com</h6>
+            <h5>rajanpandeygiit31078379@gmail.com</h5>
             <a href="mailto:rajanpandeygiit31078379@gmail.com">
               Send a message
             </a>
@@ -51,7 +51,7 @@ const Contact = () => {
             required
           />
           <input
-            type="text"
+            type="email"
             placeholder="Your Email"
             name="user_email"
             required

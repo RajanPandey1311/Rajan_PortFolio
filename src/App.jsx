@@ -6,6 +6,7 @@ import Header from './components/header/Header';
 import Intro from './components/intro/Intro';
 import Portfolio from './components/portfolio/Portfolio';
 import Topbar from './components/topbar/Topbar';
+import Chatbot from './components/chatbot/Chatbot';
 
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
       <Portfolio />
       <Contact />
       <Footer />
+      <Chatbot/>
     </>
   )
 }
