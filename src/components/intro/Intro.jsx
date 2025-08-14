@@ -39,8 +39,8 @@ const Intro = () => {
             and scalable code.{" "}
           </p>
           <p>
-            # Innovative and detail-oriented Software Developer with over 1
-            year of experience specializing in frontend development using
+            # Innovative and detail-oriented Software Developer with over 2
+            years of experience specializing in frontend development using
             React/Next.
           </p>
           <a href="#contact" className="btn btn-primary">
@@ -53,4 +53,5 @@ const Intro = () => {
 };
 
 export default Intro;
+
 
