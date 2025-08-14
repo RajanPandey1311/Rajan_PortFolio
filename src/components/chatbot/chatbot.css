@@ -52,7 +52,7 @@
   }
   
   .chatbot-header {
-    background: #33336d;
+    background: #00a27f;
     color: white;
     padding: 15px;
     display: flex;
@@ -107,7 +107,7 @@
     display: flex;
     padding: 15px;
     border-top: 1px solid #e0e0e0;
-    background: #33336d;
+    background: #00a27f;
   }
   
   .chatbot-input input {
