@@ -11,10 +11,10 @@
 }
 
 :root {
-  --color-bg: #1f1f38;
-  --color-bg-variant: #2c2c6c;
-  --color-primary: #4db5ff;
-  --color-primary-variant: rgba(77, 181, 255, 0.4);
+  --color-bg: #000000;
+  --color-bg-variant: #002921;
+  --color-primary: #00a27f;
+  --color-primary-variant: #00a27f;
   --color-white: #fff;
   --color-light: rgba(255, 255, 255, 0.6);
 
@@ -133,4 +133,5 @@ img {
   section > h2 {
     margin-bottom: 2rem;
   }
+
 }
