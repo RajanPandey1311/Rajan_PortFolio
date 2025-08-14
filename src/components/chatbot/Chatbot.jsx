@@ -38,6 +38,11 @@ const Chatbot = () => {
       setIsLoading(false);
     } catch (error) {
       console.error("Error fetching response:", error);
+      const errorMessage = {
+      text: "Message quota or limit exceeded",
+      sender: "bot",
+    };
+    setMessages((prev) => [...prev, errorMessage]);
       setIsLoading(false);
     }
   };
