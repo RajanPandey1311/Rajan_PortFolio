@@ -9,7 +9,7 @@ const Header = () => {
       <div className="container header__container">
         {/* <h3>Hello!👋Connections, I'm</h3> */}
         <h1>Rajan Pandey</h1>
-        <h2 className="text-light">Frontend Developer | MERN Stack Developer</h2>
+        <h2 className="text-light">Frontend Engineer | ReactJS Developer</h2>
         <CTA />
         <a href="#contact" className="scroll__down">
           Let's Intro
@@ -21,3 +21,4 @@ const Header = () => {
 };
 
 export default Header;
+
