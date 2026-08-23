@@ -5,7 +5,7 @@ const experiences = [
   {
     company: 'Cleveratti Skills Pvt. Ltd.',
     role: 'SDE-1',
-    period: 'Jun 2025 – Present',
+    period: 'Jun 2026 – Present',
     location: 'Gurgaon, India',
     points: [
       'Building a full-featured LMS platform with role-based access control',
@@ -16,8 +16,8 @@ const experiences = [
   {
     company: 'Vega6 Webware Technology',
     role: 'Frontend Developer',
-    period: 'Previous Role',
-    location: 'Remote',
+    period: 'Sep 2024 – Jun 2026',
+    location: 'Noida , India',
     points: [
       'Delivered multiple React-based client projects on tight deadlines',
       'Built responsive UI components and interactive user experiences',
