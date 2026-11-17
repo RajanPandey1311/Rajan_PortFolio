@@ -1,6 +1,6 @@
 import React from 'react';
 import { BsLinkedin } from 'react-icons/bs';
-import { FaGithub, FaInstagram, FaExternalLinkAlt } from 'react-icons/fa';
+import { FaGithub, FaInstagram } from 'react-icons/fa';
 import './footer.css';
 
 const Footer = () => {
@@ -12,10 +12,10 @@ const Footer = () => {
         <div className="footer__top">
           <div className="footer__brand">
             <a href="#home" className="footer__logo">
-              <span className="gradient-text">RP</span>
+              <span>RP</span>
             </a>
             <p className="footer__tagline">
-              Building the web, one component at a time.
+              AI Fullstack Engineer — shipping GenAI & MERN products.
             </p>
           </div>
 
@@ -53,14 +53,6 @@ const Footer = () => {
             >
               <FaInstagram />
             </a>
-            <a
-              href="https://www.freelancer.com/u/RajanDevelop"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="Freelancer"
-            >
-              <FaExternalLinkAlt />
-            </a>
           </div>
         </div>
 
@@ -69,7 +61,7 @@ const Footer = () => {
         <div className="footer__bottom">
           <div className="footer__availability">
             <span className="footer__availability-dot"></span>
-            Currently available for freelance work
+            Open to full-time opportunities
           </div>
           <p className="footer__copyright">
             &copy; Rajan Pandey {currentYear}. All rights reserved.

@@ -1,23 +1,14 @@
 import React, { useState, useEffect, useRef } from 'react';
 import CV from '../../assets/Rajan_Resume_2026.pdf';
+import ME from '../../assets/rajan-hero-portrait.jpg';
 import './header.css';
 
 const roles = [
-  'MERN Stack Developer',
-  'React.js Expert',
-  'Next.js Specialist',
-  'AI Product Builder',
-  'Freelance Developer',
+  'AI Fullstack Engineer',
+  'React / Next.js',
+  'RAG & GenAI',
+  'MERN Engineer',
 ];
-
-const stats = [
-  { value: '2.5+', label: 'Years Experience' },
-  { value: '25+', label: 'Projects Delivered' },
-  { value: '15+', label: 'Live AI Products' },
-  { value: '✓', label: 'Open to Freelance' },
-];
-
-const techBadges = ['React', 'Next.js', 'Node.js', 'MongoDB', 'TypeScript'];
 
 const Header = () => {
   const [roleIndex, setRoleIndex] = useState(0);
@@ -84,21 +75,20 @@ const Header = () => {
             transform: `translate(${mousePos.x * 0.5}px, ${mousePos.y * 0.5}px)`,
           }}
         ></div>
-        <div className="hero__glow hero__glow--1"></div>
-        <div className="hero__glow hero__glow--2"></div>
       </div>
 
       <div className="container hero__container">
         <div className="hero__content">
           <p className="hero__greeting">Hi, I'm</p>
-          <h1 className="hero__name gradient-text">Rajan Pandey</h1>
+          <h1 className="hero__name">Rajan Pandey</h1>
           <div className="hero__typewriter">
             <span className="hero__role">{displayText}</span>
             <span className="hero__cursor">|</span>
           </div>
           <p className="hero__bio">
-            2.5+ years building AI-powered web products. I turn complex ideas
-            into fast, scalable applications.
+            AI Fullstack Engineer with 3 years shipping production web apps across
+            SaaS, EdTech, and GenAI — React, Next.js, TypeScript, and MERN. Building
+            on LLM, RAG, and prompt-driven workflows to ship AI features end to end.
           </p>
 
           <div className="hero__cta">
@@ -118,29 +108,11 @@ const Header = () => {
               </svg>
             </a>
           </div>
-
-          <div className="hero__tech-badges">
-            {techBadges.map((tech) => (
-              <span key={tech} className="hero__badge">
-                {tech}
-              </span>
-            ))}
-          </div>
         </div>
 
         <div className="hero__visual">
-          <div className="hero__orbit-ring">
-            <div className="hero__orbit-dot hero__orbit-dot--1"></div>
-            <div className="hero__orbit-dot hero__orbit-dot--2"></div>
-            <div className="hero__orbit-dot hero__orbit-dot--3"></div>
-          </div>
-          <div className="hero__stats-card glass-card">
-            {stats.map((stat, index) => (
-              <div key={index} className="hero__stat">
-                <span className="hero__stat-value gradient-text">{stat.value}</span>
-                <span className="hero__stat-label">{stat.label}</span>
-              </div>
-            ))}
+          <div className="hero__photo">
+            <img src={ME} alt="Rajan Pandey" />
           </div>
         </div>
       </div>

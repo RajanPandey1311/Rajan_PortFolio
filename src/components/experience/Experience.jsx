@@ -1,11 +1,11 @@
 import React from 'react';
 import {
-  FaReact, FaNodeJs, FaGitAlt, FaGithub, FaDocker, FaHtml5, FaCss3Alt, FaJs,
+  FaReact, FaNodeJs, FaGitAlt, FaGithub, FaHtml5, FaCss3Alt, FaJs, FaRobot,
 } from 'react-icons/fa';
 import {
   SiNextdotjs, SiTypescript, SiTailwindcss, SiRedux,
-  SiExpress, SiMongodb, SiPostgresql, SiJsonwebtokens,
-  SiVercel, SiPostman, SiVisualstudiocode,
+  SiExpress, SiMongodb, SiMysql, SiJsonwebtokens,
+  SiVercel, SiPostman, SiOpenai,
 } from 'react-icons/si';
 import './experience.css';
 
@@ -24,25 +24,27 @@ const skillCategories = [
     ],
   },
   {
-    title: 'Backend',
+    title: 'Backend & APIs',
     skills: [
       { name: 'Node.js', icon: <FaNodeJs /> },
       { name: 'Express', icon: <SiExpress /> },
       { name: 'MongoDB', icon: <SiMongodb /> },
-      { name: 'PostgreSQL', icon: <SiPostgresql /> },
-      { name: 'JWT', icon: <SiJsonwebtokens /> },
-      { name: 'REST API', icon: <FaNodeJs /> },
+      { name: 'MySQL', icon: <SiMysql /> },
+      { name: 'JWT / RBAC', icon: <SiJsonwebtokens /> },
+      { name: 'REST APIs', icon: <FaNodeJs /> },
     ],
   },
   {
-    title: 'Tools',
+    title: 'AI & Tooling',
     skills: [
+      { name: 'OpenAI', icon: <SiOpenai /> },
+      { name: 'Gemini', icon: <FaRobot /> },
+      { name: 'RAG', icon: <FaRobot /> },
+      { name: 'LLM', icon: <FaRobot /> },
       { name: 'Git', icon: <FaGitAlt /> },
       { name: 'GitHub', icon: <FaGithub /> },
-      { name: 'Docker', icon: <FaDocker /> },
       { name: 'Vercel', icon: <SiVercel /> },
       { name: 'Postman', icon: <SiPostman /> },
-      { name: 'VS Code', icon: <SiVisualstudiocode /> },
     ],
   },
 ];
@@ -53,13 +55,13 @@ const Experience = () => {
       <div className="container">
         <div className="skills__header reveal">
           <p className="section-label">Tech Stack</p>
-          <h2 className="section-heading">Tools I Ship With</h2>
+          <h2 className="section-heading">Tools I ship with</h2>
         </div>
 
         <div className="skills__grid stagger-children">
           {skillCategories.map((category) => (
             <div key={category.title} className="skills__category glass-card">
-              <h3 className="skills__category-title gradient-text">
+              <h3 className="skills__category-title">
                 {category.title}
               </h3>
               <div className="skills__items">

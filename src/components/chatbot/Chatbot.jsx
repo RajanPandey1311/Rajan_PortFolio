@@ -4,8 +4,8 @@ import { FaRobot, FaTimes, FaPaperPlane } from 'react-icons/fa';
 import './chatbot.css';
 
 const quickQuestions = [
-  "What's your rate?",
-  'Are you available?',
+  "What's your experience?",
+  'Are you open to roles?',
   'What can you build?',
 ];
 

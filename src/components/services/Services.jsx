@@ -8,26 +8,26 @@ const services = [
     title: 'Web Application Development',
     points: [
       'React / Next.js SPAs and full-stack apps',
-      'REST API integration',
-      'Performance optimized, SEO ready',
+      'REST API integration & responsive UI',
+      'Performance-focused, production-ready delivery',
     ],
   },
   {
     icon: <FaLayerGroup />,
-    title: 'MERN Stack Development',
+    title: 'Full-Stack MERN',
     points: [
       'End-to-end MongoDB + Express + React + Node',
-      'Authentication, RBAC, file uploads',
-      'Scalable backend architecture',
+      'Authentication, JWT, RBAC, and admin panels',
+      'Scalable backend architecture & integrations',
     ],
   },
   {
     icon: <FaRobot />,
-    title: 'AI-Integrated Products',
+    title: 'AI Product Integration',
     points: [
-      'Gemini / OpenAI API integration',
-      'AI chatbots, automation tools',
-      'Smart dashboards and data apps',
+      'OpenAI / Gemini API integration',
+      'AI agents, chatbots, and automation workflows',
+      'GenAI features for SaaS and content products',
     ],
   },
 ];
@@ -38,7 +38,7 @@ const Services = () => {
       <div className="container">
         <div className="services__header reveal">
           <p className="section-label">Services</p>
-          <h2 className="section-heading">What I Can Build For You</h2>
+          <h2 className="section-heading">What I can build for you</h2>
         </div>
 
         <div className="services__grid stagger-children">
@@ -60,11 +60,10 @@ const Services = () => {
 
         <div className="services__footer reveal">
           <p className="services__pricing">
-            Starting from <span className="gradient-text">₹15,000 / $200</span> ·
-            Fast turnaround · Clean code guaranteed
+            End-to-end delivery across frontend, backend, and AI integrations.
           </p>
           <a href="#contact" className="btn btn-primary" id="hire-me-now-btn">
-            Hire Me Now
+            Get in Touch
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <line x1="5" y1="12" x2="19" y2="12" />
               <polyline points="12,5 19,12 12,19" />

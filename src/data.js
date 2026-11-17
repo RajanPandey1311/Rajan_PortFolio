@@ -3,8 +3,8 @@ export const soloProjects = [
     id: 1,
     title: 'BuzzAgentsAI',
     description:
-      'AI agents automation platform enabling businesses to deploy intelligent agents for workflow automation, content generation, and customer engagement.',
-    technologies: ['Next.js', 'Node.js', 'TypeScript', 'AI Agents'],
+      'AI social media automation platform with custom agencies, clients, and agents — drag-and-drop editors and AI image/video workflows supporting 500+ posts weekly.',
+    technologies: ['React.js', 'Redux', 'OpenAI', 'Fabric.js', 'React Query'],
     link: '',
     github: 'https://github.com/RajanPandey1311',
     featured: true,
@@ -13,8 +13,8 @@ export const soloProjects = [
     id: 2,
     title: 'MovieReel',
     description:
-      'AI-powered movie discovery platform with personalized recommendations, advanced search, and curated watchlists using ML algorithms.',
-    technologies: ['React', 'Node.js', 'AI/ML', 'MongoDB'],
+      'GenAI text-to-video platform with storyboards, character creation, image editing, multi-style rendering, and OpenAI integration for production SaaS features.',
+    technologies: ['React.js', 'Context API', 'Bootstrap', 'TanStack Query'],
     link: '',
     github: 'https://github.com/RajanPandey1311',
     featured: true,
@@ -23,7 +23,7 @@ export const soloProjects = [
     id: 3,
     title: 'LMS Platform — Cleveratti',
     description:
-      'Full-featured e-learning platform with role-based access control, course management, progress tracking, and AI-powered features.',
+      'Full-stack LMS on MERN with 4 RBAC-secured role workflows, real-time progress tracking, Admin Panel, and end-to-end REST API ownership.',
     technologies: ['React', 'Node.js', 'MongoDB', 'RBAC'],
     link: '',
     github: '',
@@ -63,7 +63,7 @@ export const soloProjects = [
     id: 7,
     title: 'MERN Quiz App',
     description:
-      'Sophisticated quiz application with timed challenges, leaderboards, and Redux state management for seamless user experience.',
+      'Quiz application with timed challenges, leaderboards, and Redux state management for a seamless user experience.',
     technologies: ['React', 'Redux', 'Node.js', 'MongoDB'],
     link: 'https://brain-teaser-ten.vercel.app/',
     github: 'https://github.com/RajanPandey1311/Brain-Teaser',
@@ -83,7 +83,7 @@ export const soloProjects = [
     id: 9,
     title: 'FitFlare Gym App',
     description:
-      'Animated fitness web application with smooth Framer Motion transitions, workout plans, and EmailJS contact integration.',
+      'Fitness web application with smooth transitions, workout plans, and EmailJS contact integration.',
     technologies: ['React', 'Framer Motion', 'EmailJS'],
     link: 'https://fit-flare.vercel.app/',
     github: 'https://github.com/RajanPandey1311/FitFlare',

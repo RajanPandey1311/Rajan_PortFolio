@@ -71,7 +71,7 @@ const Topbar = () => {
         <div className="topbar__right">
           <div className="topbar__status">
             <span className="topbar__status-dot"></span>
-            <span className="topbar__status-text">Available for Freelance</span>
+            <span className="topbar__status-text">Open to opportunities</span>
           </div>
 
           <button

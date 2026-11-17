@@ -1,68 +1,81 @@
 /* ===== SKILLS SECTION ===== */
 .skills__header {
-  text-align: center;
+  text-align: left;
   margin-bottom: 3rem;
+}
+
+.skills__header .section-heading {
+  margin-bottom: 0;
 }
 
 .skills__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  gap: 1.25rem;
 }
 
 .skills__category {
-  padding: 2rem;
-  text-align: center;
+  padding: 1.75rem;
+  text-align: left;
 }
 
 .skills__category-title {
-  font-size: 1.2rem;
+  font-family: var(--font-display);
+  font-size: 1.05rem;
   font-weight: 700;
-  margin-bottom: 1.5rem;
-  letter-spacing: 0.5px;
+  margin-bottom: 1.25rem;
+  color: var(--color-ink);
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--color-border);
 }
 
 .skills__items {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1.2rem;
+  gap: 0.75rem;
 }
 
 .skills__item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.5rem;
-  padding: 1rem 0.5rem;
-  border-radius: var(--radius-md);
+  gap: 0.4rem;
+  padding: 0.85rem 0.4rem;
+  border-radius: var(--radius-sm);
   transition: var(--transition);
   cursor: default;
 }
 
 .skills__item:hover {
-  background: rgba(0, 212, 255, 0.05);
-  transform: translateY(-3px);
+  background: var(--color-accent-soft);
+  transform: translateY(-2px);
 }
 
 .skills__icon {
-  font-size: 2rem;
-  color: var(--color-lighter);
-  transition: var(--transition);
+  font-size: 1.65rem;
+  color: var(--color-primary);
+  width: 2.5rem;
+  height: 2.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  background: var(--color-accent-soft);
+  border-radius: var(--radius-sm);
+  transition: var(--transition);
 }
 
 .skills__item:hover .skills__icon {
-  color: var(--color-primary);
-  filter: drop-shadow(0 0 8px rgba(0, 212, 255, 0.5));
+  color: var(--color-ink);
+  background: transparent;
+  filter: none;
 }
 
 .skills__name {
-  font-size: 0.78rem;
+  font-size: 0.75rem;
   font-weight: 600;
   color: var(--color-light);
-  letter-spacing: 0.3px;
+  letter-spacing: 0.2px;
+  text-align: center;
 }
 
 /* ===== RESPONSIVE ===== */
@@ -75,15 +88,17 @@
 @media screen and (max-width: 600px) {
   .skills__grid {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 1rem;
   }
 
   .skills__items {
     grid-template-columns: repeat(3, 1fr);
-    gap: 0.8rem;
+    gap: 0.5rem;
   }
 
   .skills__icon {
-    font-size: 1.6rem;
+    font-size: 1.35rem;
+    width: 2.2rem;
+    height: 2.2rem;
   }
 }

@@ -6,15 +6,16 @@
   z-index: 100;
   padding: 1rem 0;
   transition: var(--transition);
+  background: transparent;
 }
 
 .topbar--scrolled {
-  background: rgba(10, 10, 15, 0.85);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(0, 212, 255, 0.08);
-  padding: 0.6rem 0;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--color-border);
+  padding: 0.55rem 0;
+  box-shadow: var(--shadow-sm);
 }
 
 .topbar__inner {
@@ -33,15 +34,12 @@
 }
 
 .topbar__logo-text {
-  font-size: 1.6rem;
+  font-family: var(--font-display);
+  font-size: 1.45rem;
   font-weight: 800;
-  background: var(--gradient-text);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-shadow: none;
-  position: relative;
+  color: var(--color-ink);
   letter-spacing: -0.5px;
+  position: relative;
 }
 
 .topbar__logo-text::after {
@@ -51,35 +49,34 @@
   left: 0;
   width: 100%;
   height: 2px;
-  background: var(--gradient-text);
+  background: var(--color-primary);
   border-radius: 1px;
-  box-shadow: 0 0 8px rgba(0, 212, 255, 0.5);
 }
 
 /* Nav Links */
 .topbar__links {
   display: flex;
   align-items: center;
-  gap: 0.3rem;
+  gap: 0.15rem;
 }
 
 .topbar__link {
-  padding: 0.5rem 1rem;
-  font-size: 0.9rem;
+  padding: 0.45rem 0.85rem;
+  font-size: 0.88rem;
   font-weight: 500;
   color: var(--color-light);
-  border-radius: 50px;
+  border-radius: var(--radius-sm);
   transition: var(--transition-fast);
   position: relative;
 }
 
 .topbar__link:hover {
-  color: var(--color-white);
+  color: var(--color-ink);
 }
 
 .topbar__link--active {
-  color: var(--color-primary);
-  background: rgba(0, 212, 255, 0.08);
+  color: var(--color-ink);
+  background: var(--color-accent-soft);
 }
 
 .topbar__link--active::after {
@@ -92,7 +89,6 @@
   height: 4px;
   border-radius: 50%;
   background: var(--color-primary);
-  box-shadow: 0 0 6px var(--color-primary);
 }
 
 /* Right section */
@@ -105,27 +101,25 @@
 .topbar__status {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  padding: 0.4rem 1rem;
-  border-radius: 50px;
-  background: rgba(34, 197, 94, 0.08);
-  border: 1px solid rgba(34, 197, 94, 0.2);
+  gap: 0.45rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--radius-sm);
+  background: rgba(47, 107, 79, 0.08);
+  border: 1px solid rgba(47, 107, 79, 0.2);
 }
 
 .topbar__status-dot {
-  width: 8px;
-  height: 8px;
+  width: 7px;
+  height: 7px;
   border-radius: 50%;
   background: var(--color-success);
-  animation: pulse 2s ease-in-out infinite;
-  box-shadow: 0 0 8px rgba(34, 197, 94, 0.6);
 }
 
 .topbar__status-text {
-  font-size: 0.75rem;
+  font-size: 0.72rem;
   font-weight: 600;
   color: var(--color-success);
-  letter-spacing: 0.3px;
+  letter-spacing: 0.2px;
 }
 
 /* Hamburger */
@@ -142,9 +136,9 @@
 
 .topbar__hamburger span {
   display: block;
-  width: 24px;
+  width: 22px;
   height: 2px;
-  background: var(--color-white);
+  background: var(--color-ink);
   border-radius: 2px;
   transition: var(--transition);
 }
@@ -165,7 +159,6 @@
   display: none;
 }
 
-/* Overlay */
 .topbar__overlay {
   display: none;
 }
@@ -186,14 +179,13 @@
     right: -100%;
     width: 280px;
     height: 100vh;
-    background: rgba(10, 10, 15, 0.97);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    background: var(--color-surface);
     flex-direction: column;
     justify-content: center;
-    gap: 0.5rem;
+    gap: 0.35rem;
     border-left: 1px solid var(--color-border);
-    transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: var(--shadow-lg);
+    transition: right 0.35s cubic-bezier(0.4, 0, 0.2, 1);
     z-index: 105;
   }
 
@@ -202,8 +194,8 @@
   }
 
   .topbar__link {
-    font-size: 1.1rem;
-    padding: 0.8rem 2rem;
+    font-size: 1.05rem;
+    padding: 0.75rem 2rem;
     width: 100%;
     text-align: center;
   }
@@ -224,7 +216,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(18, 20, 26, 0.35);
     z-index: 104;
   }
 }

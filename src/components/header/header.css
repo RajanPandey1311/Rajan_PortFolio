@@ -5,9 +5,12 @@ header {
   position: relative;
   overflow: hidden;
   padding-top: 80px;
+  background:
+    linear-gradient(135deg, rgba(215, 238, 236, 0.45) 0%, transparent 45%),
+    linear-gradient(to bottom, var(--color-bg) 0%, #e8ecf1 100%);
 }
 
-/* Background Effects */
+/* Subtle parallax wash — kept for mouse handler, not neon grid */
 .hero__bg-effects {
   position: absolute;
   top: 0;
@@ -20,91 +23,66 @@ header {
 
 .hero__dot-grid {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: radial-gradient(
-    circle,
-    rgba(0, 212, 255, 0.12) 1px,
-    transparent 1px
-  );
-  background-size: 32px 32px;
-  transition: transform 0.3s ease-out;
-}
-
-.hero__glow {
-  position: absolute;
+  top: -5%;
+  right: -5%;
+  width: 55%;
+  height: 70%;
+  background:
+    radial-gradient(circle at 30% 40%, rgba(11, 110, 106, 0.08) 0%, transparent 55%),
+    radial-gradient(circle at 70% 60%, rgba(18, 20, 26, 0.04) 0%, transparent 50%);
+  transition: transform 0.35s ease-out;
   border-radius: 50%;
-  filter: blur(80px);
-  opacity: 0.4;
-}
-
-.hero__glow--1 {
-  width: 400px;
-  height: 400px;
-  background: rgba(0, 212, 255, 0.15);
-  top: 10%;
-  left: 5%;
-  animation: floatSlow 8s ease-in-out infinite;
-}
-
-.hero__glow--2 {
-  width: 350px;
-  height: 350px;
-  background: rgba(124, 58, 237, 0.15);
-  bottom: 10%;
-  right: 5%;
-  animation: floatSlow 10s ease-in-out infinite reverse;
 }
 
 /* Container */
 .hero__container {
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 4rem;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 3.5rem;
   align-items: center;
   position: relative;
   z-index: 1;
+  width: 100%;
 }
 
-/* Content */
 .hero__content {
-  animation: slideInLeft 1s ease forwards;
+  animation: slideInLeft 0.8s ease forwards;
 }
 
 .hero__greeting {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 500;
-  color: var(--color-light);
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  margin-bottom: 0.5rem;
+  color: var(--color-muted, var(--color-light));
+  letter-spacing: 0.08em;
+  margin-bottom: 0.4rem;
 }
 
 .hero__name {
-  font-size: clamp(3rem, 6vw, 4.5rem);
-  font-weight: 900;
-  line-height: 1.1;
-  margin-bottom: 1rem;
-  letter-spacing: -1px;
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 6.5vw, 4.75rem);
+  font-weight: 800;
+  line-height: 1.05;
+  margin-bottom: 0.85rem;
+  letter-spacing: -0.03em;
+  color: var(--color-ink);
 }
 
 .hero__typewriter {
   display: flex;
   align-items: center;
-  height: 2.5rem;
-  margin-bottom: 1.5rem;
+  min-height: 2.25rem;
+  margin-bottom: 1.25rem;
 }
 
 .hero__role {
-  font-size: 1.3rem;
+  font-family: var(--font-display);
+  font-size: 1.25rem;
   font-weight: 600;
   color: var(--color-primary);
 }
 
 .hero__cursor {
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   color: var(--color-primary);
   animation: blink 0.8s step-end infinite;
   margin-left: 2px;
@@ -112,101 +90,79 @@ header {
 }
 
 .hero__bio {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   color: var(--color-light);
-  line-height: 1.8;
-  max-width: 500px;
+  line-height: 1.75;
+  max-width: 34rem;
   margin-bottom: 2rem;
 }
 
-/* CTA */
 .hero__cta {
   display: flex;
-  gap: 1rem;
-  margin-bottom: 2.5rem;
+  gap: 0.85rem;
   flex-wrap: wrap;
 }
 
-/* Tech Badges */
-.hero__tech-badges {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.6rem;
-}
-
-.hero__badge {
-  padding: 0.35rem 0.9rem;
-  border-radius: 50px;
-  font-size: 0.78rem;
-  font-weight: 600;
-  color: var(--color-lighter);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  background: rgba(255, 255, 255, 0.03);
-  letter-spacing: 0.5px;
-}
-
-/* Visual / Stats Card */
+/* Photo plane — soft fade into canvas, not a hard card */
 .hero__visual {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   position: relative;
-  animation: slideInRight 1s ease forwards;
+  animation: slideInRight 0.8s ease forwards;
+  min-height: min(70vh, 560px);
 }
 
-.hero__orbit-ring {
-  position: absolute;
-  --orbit-radius: 170px;
-  width: calc(var(--orbit-radius) * 2);
-  height: calc(var(--orbit-radius) * 2);
-  border-radius: 50%;
-  border: 1px dashed rgba(0, 212, 255, 0.15);
-  animation: orbitRotate 20s linear infinite;
-}
-
-.hero__orbit-dot {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: var(--color-primary);
-  box-shadow: 0 0 12px rgba(0, 212, 255, 0.6);
-}
-
-.hero__orbit-dot--1 { transform: translate(-50%, -50%) rotate(0deg) translateY(calc(-1 * var(--orbit-radius))); }
-.hero__orbit-dot--2 { transform: translate(-50%, -50%) rotate(120deg) translateY(calc(-1 * var(--orbit-radius))); }
-.hero__orbit-dot--3 { transform: translate(-50%, -50%) rotate(240deg) translateY(calc(-1 * var(--orbit-radius))); }
-
-.hero__stats-card {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
-  padding: 2.5rem;
-  width: 300px;
-  animation: float 6s ease-in-out infinite;
+.hero__photo {
   position: relative;
-  z-index: 2;
+  width: 100%;
+  max-width: 440px;
+  height: min(68vh, 540px);
+  overflow: hidden;
+  border-radius: 1.25rem;
+  border: none;
+  box-shadow: none;
+  background: transparent;
+  transition: transform 0.45s ease;
+  /* Soft dissolve into page background */
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    #000 0%,
+    #000 62%,
+    rgba(0, 0, 0, 0.55) 82%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    #000 0%,
+    #000 62%,
+    rgba(0, 0, 0, 0.55) 82%,
+    transparent 100%
+  );
 }
 
-.hero__stat {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  gap: 0.3rem;
+.hero__photo::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(to top, var(--color-bg) 0%, transparent 32%),
+    linear-gradient(to left, var(--color-bg) 0%, transparent 18%),
+    linear-gradient(135deg, rgba(215, 238, 236, 0.2) 0%, transparent 45%);
+  z-index: 1;
 }
 
-.hero__stat-value {
-  font-size: 1.8rem;
-  font-weight: 800;
+.hero__photo:hover {
+  transform: scale(1.01);
 }
 
-.hero__stat-label {
-  font-size: 0.75rem;
-  color: var(--color-lighter);
-  font-weight: 500;
-  letter-spacing: 0.3px;
+.hero__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 12%;
+  filter: saturate(0.92) contrast(1.02);
 }
 
 /* Scroll Indicator */
@@ -218,10 +174,11 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.45rem;
   color: var(--color-lighter);
   text-decoration: none;
   transition: var(--transition-fast);
+  z-index: 2;
 }
 
 .hero__scroll-indicator:hover {
@@ -229,17 +186,16 @@ header {
 }
 
 .hero__scroll-text {
-  font-size: 0.7rem;
+  font-size: 0.65rem;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 0.15em;
   font-weight: 600;
 }
 
 .hero__scroll-line {
   width: 1px;
-  height: 40px;
+  height: 36px;
   background: linear-gradient(to bottom, var(--color-primary), transparent);
-  animation: pulse 2s ease-in-out infinite;
 }
 
 /* ===== RESPONSIVE ===== */
@@ -247,7 +203,7 @@ header {
   .hero__container {
     grid-template-columns: 1fr;
     text-align: center;
-    gap: 3rem;
+    gap: 2.5rem;
   }
 
   .hero__content {
@@ -257,63 +213,59 @@ header {
   }
 
   .hero__bio {
-    max-width: 100%;
+    max-width: 36rem;
   }
 
   .hero__cta {
     justify-content: center;
-  }
-
-  .hero__tech-badges {
-    justify-content: center;
-  }
-
-  .hero__orbit-ring {
-    --orbit-radius: 140px;
-  }
-
-  .hero__stats-card {
-    width: 260px;
   }
 
   .hero__typewriter {
     justify-content: center;
   }
+
+  .hero__visual {
+    justify-content: center;
+    min-height: auto;
+  }
+
+  .hero__photo {
+    max-width: 320px;
+    height: 400px;
+  }
 }
 
 @media screen and (max-width: 600px) {
   header {
-    padding-top: 60px;
+    padding-top: 72px;
+    min-height: auto;
+    padding-bottom: 4rem;
   }
 
   .hero__name {
-    font-size: 2.5rem;
+    font-size: 2.6rem;
   }
 
   .hero__role {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
   }
 
   .hero__cta {
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
+    width: 100%;
   }
 
-  .hero__stats-card {
-    width: 240px;
-    padding: 1.5rem;
-    gap: 1rem;
+  .hero__cta .btn {
+    justify-content: center;
   }
 
-  .hero__stat-value {
-    font-size: 1.5rem;
+  .hero__photo {
+    max-width: 280px;
+    height: 340px;
   }
 
   .hero__scroll-indicator {
     display: none;
-  }
-
-  .hero__orbit-ring {
-    --orbit-radius: 115px;
   }
 }

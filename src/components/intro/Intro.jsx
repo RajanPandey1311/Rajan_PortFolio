@@ -1,55 +1,47 @@
 import React from 'react';
-import ME from '../../assets/me2.png';
-import { FaAward, FaRocket, FaBrain } from 'react-icons/fa';
 import './intro.css';
 
 const highlights = [
-  { icon: <FaAward />, value: '2.5+', label: 'Years Experience' },
-  { icon: <FaRocket />, value: '20+ SaaS', label: 'Products Shipped' },
-  { icon: <FaBrain />, value: '1,000s+', label: 'Active Users' },
+  { value: '3 yrs', label: 'Experience' },
+  { value: '15+', label: 'Production apps' },
+  { value: '25+', label: 'Projects shipped' },
 ];
 
 const Intro = () => {
   return (
     <section id="about">
       <div className="container about__container">
-        <div className="about__image-wrapper reveal-left">
-          <div className="about__image-glow"></div>
-          <div className="about__image">
-            <img src={ME} alt="Rajan Pandey" loading="lazy" />
-          </div>
-          <div className="about__float-badges">
-            <span className="about__float-badge about__float-badge--1">React</span>
-            <span className="about__float-badge about__float-badge--2">Node.js</span>
-            <span className="about__float-badge about__float-badge--3">AI</span>
-            <span className="about__float-badge about__float-badge--4">Next.js</span>
-          </div>
-        </div>
-
-        <div className="about__content reveal-right">
-          <p className="section-label">About Me</p>
-          <h2 className="section-heading">I Build Products, Not Just Websites</h2>
+        <div className="about__content reveal">
+          <p className="section-label">About</p>
+          <h2 className="section-heading">I ship AI-powered products end to end.</h2>
 
           <p className="about__text">
-            I'm Rajan Pandey — a MERN Stack Developer who obsesses over building
-            products that actually solve problems. I have successfully <strong style={{color: 'var(--color-primary)', fontWeight: '700'}}>delivered 20+ SaaS products with thousands of active users</strong>, turning complex business ideas into fast, scalable applications.
+            I'm Rajan Pandey — an AI Fullstack Engineer with 3 years of full-time
+            experience building production web applications across SaaS, EdTech,
+            and GenAI. Strong in React.js, Next.js, TypeScript, and the MERN stack,
+            with hands-on work across frontend, backend, databases, and third-party
+            integrations.
           </p>
           <p className="about__text">
-            With 2.5+ years of hands-on experience in the MERN ecosystem, I've
-            shipped everything from AI-powered platforms to enterprise LMS systems.
-            My code is clean, my delivery is fast, and my clients keep coming back.
+            I've delivered{' '}
+            <strong style={{ color: 'var(--color-primary)', fontWeight: '700' }}>
+              15+ production apps
+            </strong>{' '}
+            — from AI social automation and GenAI video platforms to enterprise LMS
+            systems with RBAC, Meta Graph lead pipelines, and React Native apps for
+            thousands of users.
           </p>
           <p className="about__text">
-            Currently building AI-integrated products and available for freelance
-            projects that challenge me to push boundaries.
+            Certified in Anthropic AI Fluency and IBM Web Development. Currently
+            open to full-time roles that need someone who owns the full stack —
+            and the AI layer on top of it.
           </p>
 
-          <div className="about__highlights stagger-children">
+          <div className="about__stats stagger-children">
             {highlights.map((item, index) => (
-              <div key={index} className="about__highlight glass-card">
-                <span className="about__highlight-icon">{item.icon}</span>
-                <span className="about__highlight-value gradient-text">{item.value}</span>
-                <span className="about__highlight-label">{item.label}</span>
+              <div key={index} className="about__stat">
+                <span className="about__stat-value">{item.value}</span>
+                <span className="about__stat-label">{item.label}</span>
               </div>
             ))}
           </div>

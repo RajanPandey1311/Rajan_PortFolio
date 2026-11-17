@@ -5,7 +5,6 @@ import {
   MdOutlineLocationOn,
 } from 'react-icons/md';
 import { BsLinkedin } from 'react-icons/bs';
-import { FaExternalLinkAlt } from 'react-icons/fa';
 import './contact.css';
 
 const contactInfo = [
@@ -22,15 +21,9 @@ const contactInfo = [
     link: 'https://www.linkedin.com/in/rajanpandey1/',
   },
   {
-    icon: <FaExternalLinkAlt />,
-    label: 'Freelancer',
-    value: 'freelancer.com/u/RajanDevelop',
-    link: 'https://www.freelancer.com/u/RajanDevelop',
-  },
-  {
     icon: <MdOutlineLocationOn />,
     label: 'Location',
-    value: 'Delhi NCR, India (Remote Friendly)',
+    value: 'Gurugram, India',
     link: null,
   },
 ];
@@ -69,9 +62,9 @@ const Contact = () => {
       <div className="container">
         <div className="contact__header reveal">
           <p className="section-label">Get In Touch</p>
-          <h2 className="section-heading">Let's Build Something</h2>
+          <h2 className="section-heading">Let's build something</h2>
           <p className="contact__subtext">
-            Available for freelance projects, contract work, and full-time remote roles.
+            Open to full-time remote and hybrid AI fullstack roles.
           </p>
         </div>
 

@@ -27,7 +27,7 @@ const Portfolio = () => {
       <div className="container">
         <div className="portfolio__header reveal">
           <p className="section-label">Featured Work</p>
-          <h2 className="section-heading">Things I've Built</h2>
+          <h2 className="section-heading">Things I've built</h2>
         </div>
 
         <div className="portfolio__grid stagger-children">
@@ -71,7 +71,7 @@ const ProjectCard = ({ project, onMouseMove, onMouseLeave }) => {
       <div className="portfolio__card-accent"></div>
 
       {project.featured && (
-        <span className="portfolio__featured-badge">FEATURED</span>
+        <span className="portfolio__featured-badge">Featured</span>
       )}
 
       <div className="portfolio__card-body">
